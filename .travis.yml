@@ -1,0 +1,9 @@
+language: csharp
+solution: FractalGodot.sln
+install:
+ - nuget restore
+script:
+ - msbuild /p:Configuration=Release
+mono:
+ - latest
+
